@@ -1,0 +1,134 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    padding: 100px 120px;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    height: 500px;
+    background-color: hsl(30, 38%, 92%);
+    margin: 0px auto;
+    padding: 0%;
+}
+
+.container .image {
+    padding: 0;
+}
+
+.container .image img {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container .content {
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+h3 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color:grey
+}
+
+h1 {
+    font-family: "Fraunces";
+    font-style: bold;
+    line-height: 1;
+}
+
+p {
+    font-family: "Montserrat";
+    text-align:left;
+    line-height: 1.5;
+    font-size: 15px;
+    color: grey;
+}
+
+.container .content .prices {
+    display: flex;
+    justify-items: right;
+}
+
+.container .content .prices p {
+    text-align: left;
+    font-family: "Fraunces";
+}
+.container .content .price_low {
+    flex-basis: 50%;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 20px 5px 0px;
+}
+
+.container .content .price_high {
+    flex-basis: 50%;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.container .content button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 14px 62px;
+    margin-top: 15px;
+    margin-right: 0px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+}
+
+.container .content button img {
+    padding: 0 8px 0 0;
+}
+.container .content button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.attribution, .attribution p {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 10px;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0 auto;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-items: center;
+    }
+
+    .content {
+        max-width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .image img {
+        max-width: 100%;
+        background-image: url("./images/image-product-mobile.jpg");
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .attribution {
+        margin-top: 400px;
+    }
+}
